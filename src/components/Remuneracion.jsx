@@ -8,77 +8,148 @@ import suboficialIcon from "../../public/placas/suboficial.gif";
 import oficialEliteIcon from "../../public/placas/oficialelite.gif";
 import oficialSuperiorIcon from "../../public/placas/oficialsuperior.gif";
 import oficialGeneralIcon from "../../public/placas/oficialgeneral.gif";
+import geomIcon from "../../public/placas/geom.gif"; // opcional si tienes una imagen para GEOM
 
 const RemuneracionTable = () => {
-  const data = [
+  const rows = [
     {
-      rango: "RECLUTA",
-      requisitos: "1h",
-      remuneracion: "5 créditos + 1 ascenso",
       icon: reclutaIcon,
+      categoria: "Reclutas",
+      codigo: "REC",
+      sueldo: "$5",
+      publicidades: "-",
+      horas: "1",
+      puntos: "-",
     },
     {
-      rango: "CABALLERÍA",
-      requisitos: "7h, 1PA",
-      remuneracion: "20 créditos / 1 grado",
       icon: caballeriaIcon,
+      categoria: "Caballería",
+      codigo: "CAB",
+      sueldo: "$20 o 5Grados",
+      publicidades: "-",
+      horas: "7",
+      puntos: "1",
     },
     {
-      rango: "SUBOFICIAL",
-      requisitos: "8h, 1.5PA, 4 ZdI",
-      remuneracion: "25 créditos / 1 grado",
       icon: suboficialIcon,
+      categoria: "Suboficial",
+      codigo: "SOF",
+      sueldo: "$25 o 5Grados",
+      publicidades: "-",
+      horas: "9",
+      puntos: "1.5",
     },
     {
-      rango: "OFICIAL ÉLITE",
-      requisitos: "10h, 2PA",
-      remuneracion: "30 créditos / 1 grado",
       icon: oficialEliteIcon,
+      categoria: "Oficial Élite",
+      codigo: "OFE",
+      sueldo: "$40 o 3Grados",
+      publicidades: "1",
+      horas: "12",
+      puntos: "2",
     },
     {
-      rango: "OFICIAL SUPERIOR",
-      requisitos: "12h, 2.5PA",
-      remuneracion: "35 créditos / 1 grado",
       icon: oficialSuperiorIcon,
+      categoria: "Oficial Superior",
+      codigo: "OFS",
+      sueldo: "$55 o 3Grados",
+      publicidades: "3",
+      horas: "14",
+      puntos: "2.5",
     },
     {
-      rango: "OFICIAL GENERAL",
-      requisitos: "14h, 3PA",
-      remuneracion: "40 créditos / 1 grado",
       icon: oficialGeneralIcon,
+      categoria: "Oficial General",
+      codigo: "OFG",
+      sueldo: "$70 o 2Grados",
+      publicidades: "4",
+      horas: "20",
+      puntos: "3",
+    },
+    {
+      icon: geomIcon,
+      categoria: "GEOM",
+      codigo: "GEOM",
+      sueldo: "-",
+      publicidades: "-",
+      horas: "-",
+      puntos: "-",
     },
   ];
 
   return (
     <div className="remuneracion-container">
-      <h2 className="remuneracion-title">Tabla de Remuneraciones EMS</h2>
-      <div className="remuneracion-table-wrapper">
-        <table className="remuneracion-table">
-          <thead>
-            <tr>
-              <th>Rango</th>
-              <th>Requisitos</th>
-              <th>Remuneración</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((item, index) => (
-              <tr key={index}>
-                <td>
+      <h2 className="remuneracion-title">Datos del rango</h2>
+      <table className="remuneracion-table">
+        <thead>
+          <tr>
+            <th colSpan="4">Información militar</th>
+            <th colSpan="3">Porcentajes de trabajo</th>
+          </tr>
+          <tr>
+            <th>Placa</th>
+            <th>Categoría militar</th>
+            <th>Codigo</th>
+            <th>Sueldo</th>
+            <th>
+              Publicidades
+              <br />
+              25%
+            </th>
+            <th>
+              Horas laborales
+              <br />
+              50%
+            </th>
+            <th className="highlighted-header">
+              Puntos de actividades
+              <br />
+              <span className="highlighted">25%</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((item, index) => (
+            <tr key={index}>
+              <td>
+                {item.icon && (
                   <img
                     src={item.icon}
-                    alt={item.rango}
+                    alt={item.categoria}
                     className="rango-icon"
                   />
-                  {item.rango}
-                </td>
-                <td>{item.requisitos}</td>
-                <td>{item.remuneracion}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                )}
+              </td>
+              <td>{item.categoria}</td>
+              <td>{item.codigo}</td>
+              <td>{item.sueldo}</td>
+              <td>{item.publicidades}</td>
+              <td>{item.horas}</td>
+              <td>{item.puntos}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      {/* Condiciones especiales */}
+      <div className="condiciones-especiales">
+        <h3>Condiciones especiales según el rango</h3>
+        <ul>
+          <li>
+            <strong>Reclutas:</strong> La paga de los Reclutas es diaria e
+            inmediata.
+          </li>
+          <li>
+            <strong>Caballería:</strong> Los miembros de Caballería solo pueden
+            acumular PA asistiendo.
+          </li>
+          <li>
+            <strong>Suboficial:</strong> Deben asistir 4 veces a ZDI (No cuenta
+            como PA).
+          </li>
+        </ul>
       </div>
+
       <div className="significados-container">
         <h2 className="significados-title">Significados</h2>
         <div className="significados-box">

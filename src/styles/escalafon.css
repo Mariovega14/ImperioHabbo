@@ -49,43 +49,43 @@
   animation: aparecer 0.8s ease-out forwards;
 }
 
-.ems-nivel:nth-child(10) {
+.ems-nivel:nth-child(1) {
   animation-delay: 0.9s;
 }
 
-.ems-nivel:nth-child(9) {
+.ems-nivel:nth-child(2) {
   animation-delay: 0.8s;
 }
 
-.ems-nivel:nth-child(8) {
+.ems-nivel:nth-child(3) {
   animation-delay: 0.7s;
 }
 
-.ems-nivel:nth-child(7) {
+.ems-nivel:nth-child(4) {
   animation-delay: 0.6s;
 }
 
-.ems-nivel:nth-child(6) {
+.ems-nivel:nth-child(5) {
   animation-delay: 0.5s;
 }
 
-.ems-nivel:nth-child(5) {
+.ems-nivel:nth-child(6) {
   animation-delay: 0.4s;
 }
 
-.ems-nivel:nth-child(4) {
+.ems-nivel:nth-child(7) {
   animation-delay: 0.3s;
 }
 
-.ems-nivel:nth-child(3) {
+.ems-nivel:nth-child(8) {
   animation-delay: 0.2s;
 }
 
-.ems-nivel:nth-child(2) {
+.ems-nivel:nth-child(9) {
   animation-delay: 0.1s;
 }
 
-.ems-nivel:nth-child(1) {
+.ems-nivel:nth-child(10) {
   animation-delay: 0s;
 }
 
@@ -150,52 +150,52 @@
 
 /* Colores jerárquicos por nivel */
 
-.ems-nivel:nth-child(10) .ems-card {
+.ems-nivel:nth-child(1) .ems-card {
   border-left-color: #4b5563;
 }
 
 /* Recluta */
-.ems-nivel:nth-child(9) .ems-card {
+.ems-nivel:nth-child(2) .ems-card {
   border-left-color: #3b82f6;
 }
 
 /* Caballería */
-.ems-nivel:nth-child(8) .ems-card {
+.ems-nivel:nth-child(3) .ems-card {
   border-left-color: #2563eb;
 }
 
 /* Suboficial */
-.ems-nivel:nth-child(7) .ems-card {
+.ems-nivel:nth-child(4) .ems-card {
   border-left-color: #1d4ed8;
 }
 
 /* Oficial Élite */
-.ems-nivel:nth-child(6) .ems-card {
+.ems-nivel:nth-child(5) .ems-card {
   border-left-color: #1e40af;
 }
 
 /* Oficial Superior */
-.ems-nivel:nth-child(5) .ems-card {
+.ems-nivel:nth-child(6) .ems-card {
   border-left-color: #1e3a8a;
 }
 
 /* Oficial General */
-.ems-nivel:nth-child(4) .ems-card {
+.ems-nivel:nth-child(7) .ems-card {
   border-left-color: #d97706;
 }
 
 /* GEOM */
-.ems-nivel:nth-child(3) .ems-card {
+.ems-nivel:nth-child(8) .ems-card {
   border-left-color: #b91c1c;
 }
 
 /* DIGEDEF */
-.ems-nivel:nth-child(2) .ems-card {
+.ems-nivel:nth-child(9) .ems-card {
   border-left-color: #a21caf;
 }
 
 /* JEDEFCO */
-.ems-nivel:nth-child(1) .ems-card {
+.ems-nivel:nth-child(10) .ems-card {
   border-left-color: #6a0274;
 }
 

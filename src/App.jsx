@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css";
 import "./styles/App.css";
+import HabboCard from "./components/HabboCard";
+import Particles from "react-tsparticles";
+import { loadLinksPreset } from "tsparticles-preset-links";
 
 const App = () => {
   const [isHidden, setIsHidden] = useState(false);
@@ -11,9 +14,9 @@ const App = () => {
     const handleScroll = () => {
       let scrollTop = window.scrollY;
       if (scrollTop > lastScrollTop) {
-        setIsHidden(true); // Oculta el navbar al bajar
+        setIsHidden(true);
       } else {
-        setIsHidden(false); // Muestra el navbar al subir
+        setIsHidden(false);
       }
       lastScrollTop = scrollTop;
     };
@@ -22,9 +25,13 @@ const App = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const particlesInit = async (engine) => {
+    await loadLinksPreset(engine);
+  };
+
   return (
     <div className="container-fluid app-container d-flex flex-column align-items-center">
-      {/* Navbar con efecto de ocultarse al hacer scroll */}
+      {/* Navbar */}
       <nav
         className={`navbar navbar-expand-lg navbar-dark bg-dark w-100 p-3 shadow ${
           isHidden ? "hidden-navbar" : ""
@@ -48,8 +55,7 @@ const App = () => {
         </p>
       </header>
 
-      {/* Sección de Tarjetas */}
-      {/* Sección de Membresías */}
+      {/* Membresías */}
       <section className="membresias-container text-center">
         <h2 className="mb-4">🔱 MEMBRESÍAS [EMS] 🔱</h2>
         <p className="text-white">
@@ -58,7 +64,7 @@ const App = () => {
         </p>
 
         <div className="d-flex flex-wrap justify-content-center">
-          {/* Membresía EMS CLUB */}
+          {/* Club */}
           <div className="card custom-card animate__animated animate__fadeIn">
             <img
               src="/emsclub.png"
@@ -68,7 +74,6 @@ const App = () => {
             <div className="card-body">
               <h3 className="card-title">[EMS] CLUB</h3>
               <p className="card-price">💰 Precio: $30</p>
-
               <ul className="list-unstyled">
                 <li>✅ Accesorios ilimitados</li>
                 <li>✅ Preferencia en día de paga</li>
@@ -79,7 +84,7 @@ const App = () => {
             </div>
           </div>
 
-          {/* Membresía Reducción Premium */}
+          {/* Reducción */}
           <div className="card custom-card animate__animated animate__fadeIn animate__delay-1s">
             <img
               src="/emsreduccion.png"
@@ -89,12 +94,65 @@ const App = () => {
             <div className="card-body">
               <h3 className="card-title">[EMS] Reducción Premium</h3>
               <p className="card-price">💰 Precio: $40</p>
-
               <ul className="list-unstyled">
                 <li>✅ Reducción del 50% de requisitos</li>
                 <li>✅ Guardapaga por 5 días</li>
+                <li>✅ 10c de descuento en compra de Club</li>
+                <li>✅ 20% de descuento en compra de rango</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Empleado del Mes */}
+      <section className="empleado-del-mes">
+        <div className="glow-background">
+          <Particles
+            id="tsparticles"
+            init={particlesInit}
+            options={{
+              preset: "links",
+              background: {
+                color: "transparent",
+              },
+              particles: {
+                color: {
+                  value: "#ffd700",
+                },
+                links: {
+                  enable: true,
+                  color: "#ffd700",
+                  distance: 100,
+                },
+                move: {
+                  enable: true,
+                  speed: 1,
+                },
+                number: {
+                  value: 50,
+                },
+                size: {
+                  value: 2,
+                },
+              },
+            }}
+            style={{
+              position: "absolute",
+              zIndex: 1,
+              width: "100%",
+              height: "100%",
+            }}
+          />
+        </div>
+
+        <div className="empleado-contenido">
+          <h2 className="section-title">🌟 Empleado del Mes 🌟</h2>
+          <p className="section-subtitle">
+            ¡Felicidades por tu esfuerzo y dedicación!
+          </p>
+          <div className="spotlight">
+            <HabboCard username="Proximamente" />
           </div>
         </div>
       </section>
