@@ -23,6 +23,10 @@ const documentos = [
     nombre: "[EMS] Membresía",
     link: "https://docs.google.com/document/d/1NPcstV4jaDkeA5_tNt9drEWCnYL4b1GvOGLZJhaKW94/edit?tab=t.0",
   },
+  {
+    nombre: "[EMS] Rango por Experiencia",
+    link: "https://docs.google.com/forms/d/1p8OcBvMU8IWt-TZrAFmfYjBO1lNbKOQ7lEUJseyR1e0/edit?usp=drivesdk",
+  },
 ];
 
 const Documentos = () => {

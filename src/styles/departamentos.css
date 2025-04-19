@@ -1,15 +1,14 @@
 /* Estilos generales */
 .departamentos-container {
-    max-width: 1000px;
-    margin: 40px auto;
+    max-width: 800px;
+    margin: 6rem auto 40px auto;
     padding: 20px;
-    background: #1e1e2f;
+    background-color: rgba(0, 0, 0, 0);
+    /* Fondo totalmente transparente */
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     color: white;
     text-align: center;
     font-family: "Arial", sans-serif;
-    margin-top: 6rem;
 }
 
 /* Título principal */
@@ -25,18 +24,21 @@
 
 /* Tarjetas de departamentos */
 .departamento {
-    background: linear-gradient(135deg, #29293d 0%, #1e1e2f 100%);
+    background: rgba(30, 30, 47, 0.5);
+    /* Semitransparente sin blur */
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Efecto hover */
 .departamento:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+    /* Nada de blur aquí */
 }
 
 /* Nombre del departamento */
@@ -60,4 +62,17 @@
 .departamento p strong {
     color: #ff2e63;
     font-size: 1.1rem;
+}
+
+/* Admin Cards */
+.admin-cards {
+    margin-top: 1rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }

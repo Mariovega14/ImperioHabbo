@@ -105,6 +105,29 @@ const App = () => {
         </div>
       </section>
 
+      <section className="rangos-experiencia text-center my-5 animate__animated animate__fadeInUp">
+        <div className="d-flex justify-content-center align-items-center mb-2">
+          <span className="emoji-icon">🏅</span>
+          <h2 className="section-title ms-2 mb-0">Rangos por Experiencia</h2>
+        </div>
+        <p className="text-white mb-1">
+          ¿Tienes experiencia en otros ejércitos? ¡Puedes ingresar directamente
+          con un rango especial!
+        </p>
+        <p className="text-light mb-4">
+          Si ya has servido en otras instituciones militares dentro de Habbo y
+          deseas unirte al EMS, por favor llena el siguiente formulario:
+        </p>
+        <a
+          href="https://docs.google.com/forms/d/1p8OcBvMU8IWt-TZrAFmfYjBO1lNbKOQ7lEUJseyR1e0/edit?usp=drivesdk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-warning fw-bold px-4 py-2"
+        >
+          📋 Llenar formulario
+        </a>
+      </section>
+
       {/* Empleado del Mes */}
       <section className="empleado-del-mes">
         <div className="glow-background">

@@ -80,56 +80,58 @@ const RemuneracionTable = () => {
   return (
     <div className="remuneracion-container">
       <h2 className="remuneracion-title">Datos del rango</h2>
-      <table className="remuneracion-table">
-        <thead>
-          <tr>
-            <th colSpan="4">Información militar</th>
-            <th colSpan="3">Porcentajes de trabajo</th>
-          </tr>
-          <tr>
-            <th>Placa</th>
-            <th>Categoría militar</th>
-            <th>Codigo</th>
-            <th>Sueldo</th>
-            <th>
-              Publicidades
-              <br />
-              25%
-            </th>
-            <th>
-              Horas laborales
-              <br />
-              50%
-            </th>
-            <th className="highlighted-header">
-              Puntos de actividades
-              <br />
-              <span className="highlighted">25%</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((item, index) => (
-            <tr key={index}>
-              <td>
-                {item.icon && (
-                  <img
-                    src={item.icon}
-                    alt={item.categoria}
-                    className="rango-icon"
-                  />
-                )}
-              </td>
-              <td>{item.categoria}</td>
-              <td>{item.codigo}</td>
-              <td>{item.sueldo}</td>
-              <td>{item.publicidades}</td>
-              <td>{item.horas}</td>
-              <td>{item.puntos}</td>
+      <div className="tabla-responsive">
+        <table className="remuneracion-table">
+          <thead>
+            <tr>
+              <th colSpan="4">Información militar</th>
+              <th colSpan="3">Porcentajes de trabajo</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+            <tr>
+              <th>Placa</th>
+              <th>Categoría militar</th>
+              <th>Codigo</th>
+              <th>Sueldo</th>
+              <th>
+                Publicidades
+                <br />
+                25%
+              </th>
+              <th>
+                Horas laborales
+                <br />
+                50%
+              </th>
+              <th className="highlighted-header">
+                Puntos de actividades
+                <br />
+                <span className="highlighted">25%</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((item, index) => (
+              <tr key={index}>
+                <td>
+                  {item.icon && (
+                    <img
+                      src={item.icon}
+                      alt={item.categoria}
+                      className="rango-icon"
+                    />
+                  )}
+                </td>
+                <td>{item.categoria}</td>
+                <td>{item.codigo}</td>
+                <td>{item.sueldo}</td>
+                <td>{item.publicidades}</td>
+                <td>{item.horas}</td>
+                <td>{item.puntos}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
       {/* Condiciones especiales */}
       <div className="condiciones-especiales">

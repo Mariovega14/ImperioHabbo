@@ -223,3 +223,22 @@
     left: 0;
     top: 0;
 }
+
+.tabla-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.remuneracion-table {
+    width: 100%;
+    min-width: 400px;
+    /* Puedes ajustar este valor */
+    border-collapse: collapse;
+}
+
+.remuneracion-table th,
+.remuneracion-table td {
+    white-space: nowrap;
+    padding: 0.5rem;
+    text-align: center;
+}
