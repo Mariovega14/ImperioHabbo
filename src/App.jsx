@@ -175,7 +175,7 @@ const App = () => {
             ¡Felicidades por tu esfuerzo y dedicación!
           </p>
           <div className="spotlight">
-            <HabboCard username="zDork" />
+            <HabboCard username="proximamente" />
           </div>
         </div>
       </section>

@@ -4,14 +4,7 @@ import HabboCard from "./components/HabboCard";
 import "./styles/directiva.css";
 
 const directivaPorCargo = {
-  EMCO: [
-    "iDarkGera",
-    "-Emmanuel.",
-    "anapao",
-    "Fatimitalove26",
-    "Desty",
-    "DaignerP",
-  ],
+  EMCO: ["iDarkGera", "anapao", "Fatimitalove26", "Desty", "DaignerP"],
   JEDEFCO: ["Proximamente"],
   DIGEDEF: [
     "guiller63676",
@@ -19,7 +12,6 @@ const directivaPorCargo = {
     "capricolnio",
     "-ismaaeeel",
     "pidbulTron",
-    "ll-javii-ll",
   ],
   GEOM: [".:xGregx:."],
   Tecnico: ["MarioRS-10", "7even"],
