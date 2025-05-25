@@ -16,7 +16,7 @@ const RemuneracionTable = () => {
       icon: reclutaIcon,
       categoria: "Reclutas",
       codigo: "REC",
-      sueldo: "$5",
+      sueldo: "$10",
       publicidades: "-",
       horas: "1",
       puntos: "-",

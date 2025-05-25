@@ -8,13 +8,13 @@ const Departamentos = () => {
       nombre: "Departamento de Doctrina Militar (DDM)",
       descripcion:
         "El Departamento de Doctrina Militar tiene como objetivo mejorar la formación y capacitación de los militares...",
-      administradores: [".:xGregx:.", "guiller63676"],
+      administradores: ["-Eriick"],
     },
     {
       nombre: "Departamento de Entrenamiento y Adiestramiento Militar (DEAM)",
       descripcion:
         "El Departamento de Entrenamiento y Adiestramiento Militar es el encargado de la instrucción constante del personal...",
-      administradores: ["pidbulTron", "-Kout"],
+      administradores: ["Spikelol123"],
     },
     {
       nombre: "Departamento de Recreación y Entretenimiento Militar (DREM)",
@@ -26,7 +26,7 @@ const Departamentos = () => {
       nombre: "Departamento de Operaciones Militares (DOM)",
       descripcion:
         "El Departamento de Operaciones Militares es el encargado de planear y ejecutar todo tipo de estrategias...",
-      administradores: ["ll-Javi-ll"],
+      administradores: ["paulag.p", "Thuriel karo"],
     },
     {
       nombre: "Departamento de Personal y Valores (DPV)",
