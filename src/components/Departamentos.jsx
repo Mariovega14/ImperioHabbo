@@ -26,7 +26,7 @@ const Departamentos = () => {
       nombre: "Departamento de Operaciones Militares (DOM)",
       descripcion:
         "El Departamento de Operaciones Militares es el encargado de planear y ejecutar todo tipo de estrategias...",
-      administradores: ["paulag.p", "Thuriel karo"],
+      administradores: ["paulag.p", "Thuriel", "karo"],
     },
     {
       nombre: "Departamento de Personal y Valores (DPV)",
