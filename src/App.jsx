@@ -119,13 +119,19 @@ const App = () => {
           deseas unirte al EMS, por favor llena el siguiente formulario:
         </p>
         <a
-          href="https://docs.google.com/forms/d/1p8OcBvMU8IWt-TZrAFmfYjBO1lNbKOQ7lEUJseyR1e0/edit?usp=drivesdk"
+          href="https://forms.gle/Sqfu2StyUB3SqmDY9"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-warning fw-bold px-4 py-2"
         >
           📋 Llenar formulario
         </a>
+        <p className="text-light mb-4">
+          El formulario de rango por experiencia tendrá un valor de 2O créditos para todos los futuros interesados en unirse a nuestro ejército bajo esta modalidad.
+        </p>
+        <p className="text-light mb-4">
+          Esta medida busca valorar de forma justa la trayectoria previa de quienes desean formar parte de nuestras filas con un rango adecuado a su experiencia.
+        </p>
       </section>
 
       {/* Empleado del Mes */}

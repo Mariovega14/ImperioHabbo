@@ -20,7 +20,7 @@ const Departamentos = () => {
       nombre: "Departamento de Recreación y Entretenimiento Militar (DREM)",
       descripcion:
         "El Departamento de Recreación y Entretenimiento Militar es el encargado de todas las actividades recreativas...",
-      administradores: ["Fatimitalove26", "capricolnio"],
+      administradores: ["rismely"],
     },
     {
       nombre: "Departamento de Operaciones Militares (DOM)",
@@ -32,7 +32,7 @@ const Departamentos = () => {
       nombre: "Departamento de Personal y Valores (DPV)",
       descripcion:
         "El Departamento de Personal y Valores busca principalmente el bienestar laboral del personal...",
-      administradores: ["-Ismaaeeel"],
+      administradores: [".lSakura"],
     },
   ];
 

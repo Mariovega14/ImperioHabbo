@@ -9,15 +9,15 @@ const documentos = [
   },
   {
     nombre: "[EMS] Régimen Disciplinario",
-    link: "https://docs.google.com/document/d/1YLmy7xbPUZpPKFJ_3_gMU2Ck7dK_Mo9SaL4pE86jeDU/edit?tab=t.0",
+    link: "https://docs.google.com/document/d/1YLmy7xbPUZpPKFJ_3_gMU2Ck7dK_Mo9SaL4pE86jeDU/edit?usp=drivesdk",
   },
   {
     nombre: "[EMS] Uniformidad e Imagen",
     link: "https://docs.google.com/document/d/1TBFJ1s3SIK2SKk0ATUGEfo4rY0Dr6bXpBEvEnrkmJ8o/edit?tab=t.0",
   },
   {
-    nombre: "[EMS] Constitución",
-    link: "https://docs.google.com/document/d/18Bi7iWbUfg8Z_QVvLvYXgW-HRl47JaJeBCNkHklhkkE/edit?tab=t.0",
+    nombre: "[EMS] Constitución del ejército",
+    link: "https://docs.google.com/document/d/18Bi7iWbUfg8Z_QVvLvYXgW-HRl47JaJeBCNkHklhkkE/edit?usp=drivesdk",
   },
   {
     nombre: "[EMS] Membresía",
