@@ -32,7 +32,7 @@ const Departamentos = () => {
       nombre: "Departamento de Personal y Valores (DPV)",
       descripcion:
         "El Departamento de Personal y Valores busca principalmente el bienestar laboral del personal...",
-      administradores: [".lSakura"],
+      administradores: [".lSakura."],
     },
   ];
 
