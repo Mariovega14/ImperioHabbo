@@ -34,6 +34,12 @@ const Departamentos = () => {
         "El Departamento de Personal y Valores busca principalmente el bienestar laboral del personal...",
       administradores: [".lSakura."],
     },
+    {
+      nombre: "Departamento de Instrucción y Formación Especializada (DIFE)",
+      descripcion:
+        "El Departamento de Instrucción y Formación Especializada es la columna vertebral del conocimiento táctico, donde se forman, capacitan y proyectan los futuros pilares del escuadrón.",
+      administradores: ["Dekoo"],
+    },
   ];
 
   return (

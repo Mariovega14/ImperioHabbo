@@ -320,12 +320,12 @@ const escalafon = [
   },
 
   {
-    nombre: "Geom",
+    nombre: "EJOM",
     descripcion:
-      "Los Generales Especializados en Operaciones Militares son militares de carrera con el grado más alto de la jerarquía militar, son altamente profesionales en el nivel superior administrativo del Escuadrón Militar Supremo, les corresponde el apoyo e impulso de los proyectos planificados por el Estado Mayor Conjunto (EMCO). Estos actuan como auxiliares del organismo administrativo, en ocasiones funcionan como órgano intercesor que vela por la transparencia de las decisiones tomadas por el líder y autoridades del Estado Mayor Conjunto.",
+      "Escala de Jefes Operacionales Militares",
     icono: (
       <img
-        src="/placas/geom.gif"
+        src="/placas/ejom.gif"
         alt="EMCO"
         className="ems-icono"
         width={24}
@@ -334,11 +334,11 @@ const escalafon = [
     ),
     rangos: [
       {
-        grados: "Geom",
-        clase: "[EMS] General Especializado en Operaciones Militares",
+        grados: "EJOM",
+        clase: "[EMS] Escala de Jefes Operacionales Militares",
         precio: "$$",
         sumaTotal: "$$",
-        sueldo: "90c",
+        sueldo: "80c",
       },
     ],
   },
