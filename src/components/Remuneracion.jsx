@@ -70,7 +70,7 @@ const RemuneracionTable = () => {
       icon: geomIcon,
       categoria: " EJOM",
       codigo: " EJOM",
-      sueldo: "$90",
+      sueldo: "$80",
       publicidades: "2",
       horas: "26h",
       puntos: "4 PdA",
