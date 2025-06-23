@@ -322,7 +322,7 @@ const escalafon = [
   {
     nombre: "EJOM",
     descripcion:
-      "Escala de Jefes Operacionales Militares",
+      "Escala de Jefes Operaciones Militares son de carrera altamente profesional en el nivel superior, les corresponde el mando como superiores",
     icono: (
       <img
         src="/placas/ejom.gif"

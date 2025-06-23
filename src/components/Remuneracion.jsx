@@ -28,7 +28,7 @@ const RemuneracionTable = () => {
       sueldo: "$20 o 5Grados",
       publicidades: "-",
       horas: "7",
-      puntos: "1",
+      puntos: "1 Pda",
     },
     {
       icon: suboficialIcon,
@@ -37,7 +37,7 @@ const RemuneracionTable = () => {
       sueldo: "$25 o 5Grados",
       publicidades: "-",
       horas: "9",
-      puntos: "1.5",
+      puntos: "1.5 Pda",
     },
     {
       icon: oficialEliteIcon,
@@ -46,7 +46,7 @@ const RemuneracionTable = () => {
       sueldo: "$40 o 3Grados",
       publicidades: "1",
       horas: "12",
-      puntos: "2",
+      puntos: "2 Pda",
     },
     {
       icon: oficialSuperiorIcon,
@@ -55,7 +55,7 @@ const RemuneracionTable = () => {
       sueldo: "$55 o 3Grados",
       publicidades: "3",
       horas: "14",
-      puntos: "2.5",
+      puntos: "2.5 Pda",
     },
     {
       icon: oficialGeneralIcon,
@@ -64,16 +64,16 @@ const RemuneracionTable = () => {
       sueldo: "$70 o 2Grados",
       publicidades: "4",
       horas: "20",
-      puntos: "3",
+      puntos: "3 PdA",
     },
     {
       icon: geomIcon,
-      categoria: "GEOM",
-      codigo: "GEOM",
-      sueldo: "-",
-      publicidades: "-",
-      horas: "-",
-      puntos: "-",
+      categoria: " EJOM",
+      codigo: " EJOM",
+      sueldo: "$90",
+      publicidades: "2",
+      horas: "26h",
+      puntos: "4 PdA",
     },
   ];
 
